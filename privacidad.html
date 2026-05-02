@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidad — GhostCreator</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Rajdhani:wght@400;500;600&display=swap');
+    :root { --black:#050508; --surface:#0d0d12; --purple:#8B5CF6; --cyan:#06B6D4; --grad:linear-gradient(90deg,#8B5CF6,#3B82F6,#06B6D4); --text:#e0e0f0; --muted:#6b6b8a; }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{background:var(--black);color:var(--text);font-family:'Rajdhani',sans-serif;font-size:16px;line-height:1.7}
+    header{text-align:center;padding:50px 20px 36px;border-bottom:1px solid rgba(139,92,246,.2)}
+    .logo-brand{font-family:'Orbitron',sans-serif;font-size:22px;font-weight:900;letter-spacing:4px}
+    .logo-ghost{color:#fff}.logo-creator{background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+    nav{text-align:center;padding:16px;font-size:13px}
+    nav a{color:var(--purple);text-decoration:none;margin:0 12px}nav a:hover{color:var(--cyan)}
+    main{max-width:760px;margin:40px auto;padding:0 24px 80px}
+    h1{font-family:'Orbitron',sans-serif;font-size:15px;letter-spacing:3px;text-transform:uppercase;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:32px}
+    h2{font-size:14px;font-weight:700;letter-spacing:1px;color:var(--purple);margin:32px 0 10px;text-transform:uppercase}
+    p{color:var(--muted);margin-bottom:12px}
+    ul{color:var(--muted);padding-left:20px;margin-bottom:12px}ul li{margin-bottom:6px}
+    strong{color:var(--text)}
+    .highlight{background:rgba(139,92,246,.1);border:1px solid rgba(139,92,246,.25);border-radius:10px;padding:18px 20px;margin:20px 0}
+    footer{text-align:center;color:var(--muted);font-size:12px;padding:30px;border-top:1px solid rgba(139,92,246,.15)}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-brand"><span class="logo-ghost">GHOST</span><span class="logo-creator">CREATOR</span></div>
+  </header>
+  <nav>
+    <a href="index.html">← Inicio</a>
+    <a href="terminos.html">Términos de Uso</a>
+  </nav>
+  <main>
+    <h1>Política de Privacidad</h1>
+    <p>Última actualización: Mayo 2025</p>
+
+    <div class="highlight">
+      <strong>Resumen:</strong> GhostCreator no recopila, almacena ni transmite ningún dato personal a servidores externos. Todo funciona localmente en tu dispositivo.
+    </div>
+
+    <h2>1. Datos que manejas tú</h2>
+    <p>Para funcionar, GhostCreator requiere que <strong>tú</strong> introduzcas las siguientes credenciales:</p>
+    <ul>
+      <li>API Key de Google (Gemini AI)</li>
+      <li>Número de teléfono de WhatsApp</li>
+      <li>Token de acceso de Facebook Page</li>
+      <li>Credenciales OAuth de YouTube</li>
+    </ul>
+    <p>Estos datos se guardan <strong>únicamente</strong> en tu dispositivo, en la carpeta <code>%APPDATA%\GhostCreator\</code>, y nunca abandonan tu equipo.</p>
+
+    <h2>2. Datos que NO recopilamos</h2>
+    <ul>
+      <li>No existe ningún servidor del desarrollador que reciba datos.</li>
+      <li>No se usan analytics, telemetría ni rastreo de uso.</li>
+      <li>No se almacenan conversaciones de WhatsApp.</li>
+      <li>No se registra el contenido generado por la IA.</li>
+    </ul>
+
+    <h2>3. Comunicación con APIs de terceros</h2>
+    <p>GhostCreator se comunica directamente desde tu dispositivo con:</p>
+    <ul>
+      <li><strong>Google Gemini API</strong> — para generación de texto e imágenes.</li>
+      <li><strong>Meta / Facebook Graph API</strong> — para publicar contenido.</li>
+      <li><strong>YouTube Data API v3</strong> — para subir videos.</li>
+      <li><strong>WhatsApp Web</strong> — para recibir y enviar comandos.</li>
+    </ul>
+    <p>Estas comunicaciones están sujetas a las políticas de privacidad de cada plataforma, fuera del control del desarrollador de GhostCreator.</p>
+
+    <h2>4. Seguridad</h2>
+    <p>Tus credenciales se guardan en texto plano en <code>%APPDATA%\GhostCreator\.env</code>. Recomendamos no compartir esa carpeta ni hacer respaldos en servicios en la nube sin cifrar.</p>
+
+    <h2>5. Menores de edad</h2>
+    <p>GhostCreator no está dirigido a menores de 18 años.</p>
+
+    <h2>6. Contacto</h2>
+    <p>Para dudas sobre privacidad, escribe a: <strong>[tu-email@dominio.com]</strong></p>
+  </main>
+  <footer>© 2025 GhostCreator. Todos los derechos reservados.</footer>
+</body>
+</html>

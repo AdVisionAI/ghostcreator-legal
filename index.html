@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Legal — GhostCreator</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Rajdhani:wght@400;500;600&display=swap');
+    :root {
+      --black: #050508; --surface: #0d0d12;
+      --purple: #8B5CF6; --blue: #3B82F6; --cyan: #06B6D4;
+      --grad: linear-gradient(90deg, #8B5CF6, #3B82F6, #06B6D4);
+      --text: #e0e0f0; --muted: #6b6b8a;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--black); color: var(--text); font-family: 'Rajdhani', sans-serif; font-size: 16px; }
+    header {
+      text-align: center; padding: 60px 20px 40px;
+      border-bottom: 1px solid rgba(139,92,246,.2);
+    }
+    .logo-brand { font-family: 'Orbitron', sans-serif; font-size: 28px; font-weight: 900; letter-spacing: 4px; }
+    .logo-ghost { color: #fff; }
+    .logo-creator { background: var(--grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .tagline { color: var(--muted); font-size: 12px; letter-spacing: 3px; margin-top: 8px; text-transform: uppercase; }
+    main { max-width: 820px; margin: 60px auto; padding: 0 24px 80px; }
+    h2 { font-family: 'Orbitron', sans-serif; font-size: 14px; letter-spacing: 3px; text-transform: uppercase;
+      background: var(--grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+      margin-bottom: 20px; }
+    .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .card {
+      background: var(--surface); border: 1px solid rgba(139,92,246,.2); border-radius: 14px;
+      padding: 28px; text-decoration: none; color: var(--text);
+      transition: border-color .2s, box-shadow .2s; display: block;
+    }
+    .card:hover { border-color: rgba(139,92,246,.5); box-shadow: 0 0 24px rgba(139,92,246,.2); }
+    .card h3 { font-family: 'Orbitron', sans-serif; font-size: 13px; letter-spacing: 2px; margin-bottom: 10px; }
+    .card p { color: var(--muted); font-size: 14px; line-height: 1.6; }
+    footer { text-align: center; color: var(--muted); font-size: 12px; padding: 30px; border-top: 1px solid rgba(139,92,246,.15); }
+    @media(max-width:600px){ .cards { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-brand">
+      <span class="logo-ghost">GHOST</span><span class="logo-creator">CREATOR</span>
+    </div>
+    <p class="tagline">AI Content. Automated.</p>
+  </header>
+  <main>
+    <h2>Documentos Legales</h2>
+    <div class="cards">
+      <a class="card" href="privacidad.html">
+        <h3>🔒 Política de Privacidad</h3>
+        <p>Cómo manejamos y protegemos tus datos. Todo funciona en local, sin servidores externos.</p>
+      </a>
+      <a class="card" href="terminos.html">
+        <h3>📋 Términos de Uso</h3>
+        <p>Condiciones de uso del software, restricciones y descargo de responsabilidades.</p>
+      </a>
+    </div>
+  </main>
+  <footer>© 2025 GhostCreator. Todos los derechos reservados.</footer>
+</body>
+</html>
